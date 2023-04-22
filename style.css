@@ -732,6 +732,13 @@ body{
       
         
     }
+    #div-about h2{ 
+        font-size: 400%;;
+    }
+    #div-about p{
+        font-size: clamp(2vh, 100%, 5vw);
+        
+    }
     
 }
 /** ESCRITORIO **/
