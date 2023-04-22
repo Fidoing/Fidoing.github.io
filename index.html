@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    
 </head>
 <body class="css-selector">
     <audio src="sound/chill.mp3" volume="0.2" autoplay ></audio>
@@ -105,7 +105,7 @@
         <section id="contact">
             <div id="div-contacto" class="display-none opacity-0">
                 <div id="arriba">
-                    <form id="miFormulario">
+                    <form id="miFormulario" action="https://formspree.io/f/mzbqyvgj" method="POST">
                         <div id="superior"style="display: flex; flex-direction: column;">
                             <div>
                                 <h2 id="h22"> Contacto</h2>
@@ -126,7 +126,7 @@
                             <label id="mensajeLabel"for="message">Mensaje: </label>
                             <textarea id="message" name="message"></textarea><br><br>
                             
-                            <input id="enviarLabel" type="submit" value="Enviar"onclick="enviarCorreo();">
+                            <input id="enviarLabel" type="submit" value="Enviar">
                         </div> 
                     </form>
                 </div>
