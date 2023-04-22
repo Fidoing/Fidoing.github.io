@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.onbeforeunload = function() {
+          window.scrollTo(0, 0);
+        }
+      </script>
+    
+    <title>Fidel | Back End Developer</title>
+    <link rel="icon" href="img/github.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+</head>
+<body class="css-selector">
+    <audio src="sound/chill.mp3" volume="0.2" autoplay ></audio>
+    <div id="fondo-animado">
+        <div id="circle"></div>
+        <img id="campo-lejos" src="img/lejos.png">
+        
+        <img id="campo-cerca" src="img/cerca.png">
+        <img id="campo" src="img/forest.png"> 
+        <div id="contorno"></div>
+        
+    </div>
+    <!--<div class="semicircle">asdasdas</div>-->
+    
+    
+    <img id="switch"class="world" src="img/idioma.png" alt="Logo de idiomas" onclick="cambiarIdioma()">
+    <div class="menu-celular">
+        <button id="menu-button">
+            <svg viewBox="0 0 24 24" width="100" height="100">
+                <path fill="currentColor" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+            </svg>
+        </button>
+    </div>
+    <div id="sure"class="menu">
+        <img src="img/logo.png" alt="Imagen logo">
+            <ul id="lista">
+                <li><a id="inicio"onclick="inicio();aparecerInicioDisplay();desaparecerAboutDisplay();desaparecerContactDisplay()" >Inicio</a></li>
+                <li><a id="sobreMi"onclick="inicio();desaparecerInicioDisplay();aparecerAboutDisplay();desaparecerContactDisplay()">Acerca de</a></li>
+                <li><a id="contacto"onclick="inicio();desaparecerInicioDisplay();desaparecerAboutDisplay();aparecerContactDisplay()">Contacto</a></li>
+                <li><a href="CV.pdf" target="_blank"><span class="coloreo">CV</span></a></li>
+            </ul>
+            <audio id="myAudio">
+                <source src="sound/chill.mp3" type="audio/mpeg">
+            </audio>
+            <button id="play-button"class="fa fa-play-circle">
+             </button>
+    </div>
+    <main class="main">
+        <section id="home">
+            <div class="invisible"></div>
+            <img class="wave"></img>
+            <div id="presentacion" class="salto">
+                <span id="presentacion1"></span>
+                <span id="presentacion2"></span>
+                <span id="presentacion3"></span>
+            </div>
+            
+            <script src="javascript.js"></script>
+
+            <div id="div-proyectos" class="proyectos oculto" >
+                <span id="fondo"><img id="carpeta" src="img/carpeta.png"> PROYECTOS</span>
+                <div id="proyectos-imagenes">
+                    <img src="img/programita.png" alt="Proyecto1" id="img-primerProyecto" class="primero" onmouseover="cambiarClase(true)" onmouseout="cambiarClase(false)">
+                    <a href="https://github.com/Fidoing/Mis-proyectos/tree/main/Base%20de%20datos"  target="_blank">
+                        <img src="img/github.png" alt="Proyecto1" id="img-git"class="segundo"onmouseover="cambiarClase(true)" onmouseout="cambiarClase(false)">
+                    </a>
+                </div>
+                <div id="proyectos-texto">
+                    <h2>TKINTER</h2>
+                    <p id="textoProyecto">Mi proyecto en tkinter utiliza la API <span class="coloreo">mysql-connect</span> para crear un programa que permite agregar, quitar y buscar objetos en una base de datos 
+                        MySQL de manera sencilla. La interfaz gráfica de usuario creada con Tkinter facilita la interacción con la base de datos y ahorra tiempo en comparación con el uso de 
+                        comandos SQL.<br>
+                        <span class="coloreo">-Más proyectos en camino-</span>
+                    </p>
+                </div>
+            </div>
+            <div id="div-Habilidades" class="Habilidades oculto" >
+                
+                <span id="fondo2"><img id="carpeta2" src="img/habilidades.png"> HABILIDADES</span>
+                <div id="titulo-Habilidades">
+                    <h2 id="h2Habilidades">LENGUAJES DE PROGRAMACION</h2>
+                </div>
+                <div id="imagenes-Habilidades">
+                    <img src="img/html.png">
+                    <img src="img/css.png">
+                    <img src="img/js.png">
+                    <img src="img/python.png">
+                    <img src="img/mysql.png">
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div id="div-about" class="display-none opacity-0">
+                <h2 id="h2About">Sobre mi</h2>
+                    <p id="textoSobremi">¡Hola! Soy un joven apasionado por la  <span class="coloreo">programación</span> y el <span class="coloreo">desarrollo web</span>. Aprendo constantemente de manera autodidacta y busco siempre estar al día con las últimas tecnologías y tendencias. Me gusta enfrentar nuevos desafíos y encontrar soluciones creativas a los problemas. Mi objetivo es desarrollar proyectos de calidad que cumplan con las necesidades del cliente y brinden una excelente experiencia de usuario.<br><br>Actualmente trabajo en proyectos freelance y siempre estoy abierto a nuevas oportunidades  <br>¡Gracias por visitar mi portafolio!</span>
+                    </p>
+            </div>
+        </section>
+        <section id="contact">
+            <div id="div-contacto" class="display-none opacity-0">
+                <div id="arriba">
+                    <form id="miFormulario">
+                        <div id="superior"style="display: flex; flex-direction: column;">
+                            <div>
+                                <h2 id="h22"> Contacto</h2>
+                            </div>
+                            <div id="info">
+                                <div id="wow">
+                                    <label id ="nombreLabel"for="name">Nombre: </label>
+                                    <input type="text" id="name" name="name"><br><br>
+                                </div>    
+                                <div id="wow2">   
+                                    <label id="correoLabel"for="email">Correo: </label>
+                                    <input type="email" id="email" name="email"><br><br>
+                                </div>
+                            </div>
+                        </div> 
+                        <div id="inferior"> 
+                        
+                            <label id="mensajeLabel"for="message">Mensaje: </label>
+                            <textarea id="message" name="message"></textarea><br><br>
+                            
+                            <input id="enviarLabel" type="submit" value="Enviar"onclick="enviarCorreo();">
+                        </div> 
+                    </form>
+                </div>
+                <div id="abajo">
+                    <div id="divtitulo">
+                        <h2 id="also"> Tambien puedes contactarme por estos medios!</h2>
+                    </div>
+                    <div id="divi">
+                        <span ><i class="fa fa-phone"></i>+569 56748417</span>
+                        <span><i class="material-icons">email</i>Fidel.alarcon.leiva@hotmail.com</span>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+   
+</body>
+
+</html>
