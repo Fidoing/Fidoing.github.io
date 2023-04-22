@@ -313,7 +313,9 @@ body{
     height: 50vh;
     justify-content: left;
     flex-direction: column;
-    transition: opacity 0.7s ease-in-out;   
+    transition: opacity 0.7s ease-in-out; 
+    overflow: hidden;
+    text-overflow: ellipsis;
     
 }
 #presentacion span{
