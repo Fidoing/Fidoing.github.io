@@ -481,20 +481,3 @@ function aparecerContactDisplay(){
   }},50)
 }
 /* ----------------------------------------BOTON  DE  CONTACTO ----------------------------------------*/  
-
-(function(){
-  emailjs.init("dcH0ldHSWLOMXAoAi"); // reemplaza con tu user_id
-})();
-function enviarCorreo() {
-  const templateParams = {
-    name: document.getElementById('name').value,
-    email: document.getElementById('email').value,
-    message: document.getElementById('message').value
-  };
-  emailjs.send('service_pklwhde', 'template_5fzottl', templateParams)
-    .then(function(response) {
-      console.log('Correo enviado con éxito!', response.status, response.text);
-    }, function(error) {
-      console.log('Error al enviar el correo:', error);
-    });
-}
