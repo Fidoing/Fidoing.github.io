@@ -324,7 +324,7 @@ function cambiarIdioma(){
     document.getElementById("fondo2").innerHTML = "<img id='carpeta2' src='img/habilidades.png'> HABILIDADES";
     document.getElementById("h2Habilidades").innerHTML = "LENGUAJES DE PROGRAMACION"
     document.getElementById("h2About").innerHTML = "SOBRE MI"
-    document.getElementById("textoSobremi").innerHTML = '¡Hola! Soy un joven apasionado por la  <span class="coloreo">programación</span> y el <span class="coloreo">desarrollo web</span>. Aprendo constantemente de manera autodidacta y busco siempre estar al día con las últimas tecnologías y tendencias. Me gusta enfrentar nuevos desafíos y encontrar soluciones creativas a los problemas. Mi objetivo es desarrollar proyectos de calidad que cumplan con las necesidades del cliente y brinden una excelente experiencia de usuario.<br><br>Actualmente trabajo en proyectos freelance y siempre estoy abierto a nuevas oportunidades  <br>¡Gracias por visitar mi portafolio!</span>'
+    document.getElementById("textoSobremi").innerHTML = '¡Hola! Soy un joven apasionado por la  <span class="coloreo">programación</span> y el <span class="coloreo">desarrollo web</span>. Aprendo constantemente de manera autodidacta y busco siempre estar al día con las últimas tecnologías y tendencias. Me gusta enfrentar nuevos desafíos y encontrar soluciones creativas a los problemas. Mi objetivo es desarrollar proyectos de calidad que cumplan con las necesidades del cliente y brinden una excelente experiencia de usuario.<br><br>Actualmente trabajo en proyectos freelance y siempre estoy abierto a nuevas oportunidades.<br>¡Gracias por visitar mi portafolio!</span>'
     inicio.textContent = "Inicio";
     sobre.textContent = "Acerca de";
     contacto.textContent = "Contacto";
