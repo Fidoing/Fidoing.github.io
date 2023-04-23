@@ -719,6 +719,11 @@ body{
     #div-contacto #abajo{
         height: 20%;
     }
+    #div-contacto #abajo #divi{
+        display: flex;
+        flex-direction: column;
+        
+    }
     #div-contacto #abajo #divi span{ 
         font-size: clamp(40px, 50%, 50px);
   
